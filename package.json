@@ -1,6 +1,6 @@
 {
   "name": "@saber2pr/gen-icon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "> generate React Jsx/Icon Elements from `iconfont.css` !",
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
     "typescript": "^3.4.3"
   },
   "dependencies": {
+    "@saber2pr/gen-icon": "^0.0.1",
     "@saber2pr/node": "^0.2.4"
   }
 }

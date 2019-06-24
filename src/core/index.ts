@@ -2,7 +2,7 @@
  * @Author: saber2pr
  * @Date: 2019-06-14 19:23:51
  * @Last Modified by: saber2pr
- * @Last Modified time: 2019-06-14 20:04:00
+ * @Last Modified time: 2019-06-24 13:01:31
  */
 import { FS } from '@saber2pr/node'
 import {
@@ -40,5 +40,7 @@ export async function App(input: string, output: string) {
 
   const IconNamespace = createNamespace('Icon', contents)
 
-  await FS.writeFile(output, IconNamespace)
+  const ReactComp = `import React from 'react';$\n${IconNamespace}`
+
+  await FS.writeFile(output, ReactComp)
 }

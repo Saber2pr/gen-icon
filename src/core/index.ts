@@ -40,7 +40,7 @@ export async function App(input: string, output: string) {
 
   const IconNamespace = createNamespace('Icon', contents)
 
-  const ReactComp = `import React from 'react';$\n${IconNamespace}`
+  const ReactComp = `import React from 'react';\n${IconNamespace}`
 
   await FS.writeFile(output, ReactComp)
 }
